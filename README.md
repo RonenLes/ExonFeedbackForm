@@ -22,5 +22,4 @@ The form allows users to share their experience, select preferred platforms and 
 - **JavaScript** – form handling, saving input, show/hide sections
 
 - ## 📸 Screenshot
-- ![Screenshot](<img width="1256" height="1294" alt="exon screen" src="https://github.com/user-attachments/assets/96dbb008-fd87-4d8e-a751-b910ffd417e7" />
-)
+<img width="1256" height="1294" alt="exon screen" src="https://github.com/user-attachments/assets/41bee480-4331-4d97-bbb5-501956cc0b0a" />
