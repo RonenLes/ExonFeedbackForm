@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="printSaveCustomerInfo.js"></script>
+	<script src="java.js"></script>
+</head>
+<div class="bodyContainer">
+
+	<body>
+		<div class="headerImage">
+			<img src="https://exongames.co.il/cdn/shop/files/2_EXON_GAMES_LOGO_WHITE_AQUA_115x@2x.png?v=1669283640"
+				alt="" />
+		</div>
+		<h1>
+			Welcome to the EXON feedback form!<br>
+			Send feedback and win prizes!!!
+		</h1>
+
+		<h4>
+			<a href="https://exongames.co.il/" style="color: red; text-decoration: none;">We invite you to visit our
+				site - HERE!</a>
+		</h4>
+
+		<div class="serviceHeader">
+			<h4>
+				We ask for 5 minutes of your time in order to improve the service experience on our website. thanks!
+			</h4>
+			<button class="button" onclick="showForm()">Continue</button>
+		</div>
+
+		<div class="formContainer">
+			<form>
+				<table border="0" width="100%" cellpadding="10">
+					<tr>
+						<td width="33%">
+							First name: <br />
+							<input type="text" id="fname" placeholder="Enter your first name" />
+						</td>
+						<td width="33%">
+							Last name: <br />
+							<input type="text" id="lname" placeholder="Enter your last name" />
+						</td>
+						<td width="33%">
+							Phone number: <br />
+							<input type="text" id="pnumber" placeholder="Enter your phone number" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Share your experience in our site: <br />
+							<textarea id="msg" rows="10" cols="100"
+								placeholder="Share in words the user experience you had on our website."></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td width="33%">
+							The platform where you purchase the most products:
+						</td>
+						<td>
+							<input type="radio" id="xbox" name="plat" value="low">Xbox</br>
+							<input type="radio" id="pc" name="plat" value="medium">PC</br>
+							<input type="radio" id="playstation" name="plat" value="high">PlayStation</br>
+							<input type="radio" id="nintendo" name="plat" value="veryhigh">Nintendo</br>
+						</td>
+					</tr>
+					<tr>
+						<td width="33%">
+							The convenient payment method for you:
+						</td>
+						<td class="paymentOptions">
+							<input type="checkbox" id="Bit" name="pay" value="BIT">Bit
+							<input type="checkbox" id="Paypal" name="pay" value="PAYPAL">Paypal
+							<input type="checkbox" id="CreditCard" name="pay" value="CREDIT CARD">CreditCard
+							<input type="checkbox" id="ApplePay" name="pay" value="APPLE PAY">ApplePay
+							<input type="checkbox" id="GooglePay" name="pay" value="GOOGLE PAY">GooglePay
+						</td>
+					</tr>
+					<tr>
+						<td width="33%">
+							How did you find us online?
+						</td>
+						<td>
+							<select id="find" name="find">
+								<option value="Facebook">FACEBOOK</option>
+								<option value="Instagram">INSTAGRAM</option>
+								<option value="Tiktok">TIKTOK</option>
+								<option value="Google Search">GOOGLE SEARCH</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<input class="button" type="button" value="Send" onclick="checkText(); showWheel()">
+				<p id="snd"></p>
+
+				<input class="button" type="button" value="Clear" onclick="clearText() "></br></br>
+				<p id="clr"></p>
+				<input class="button" type="button" value="ShowDatabase" onclick="getAllCustomers()"></br></br>
+				<p id="res"></p><br><br>
+				<div class="wheelContainer" style="display: none;"><iframe title="Wheel of Names"
+						src="https://seatingchartmaker.app/ewon/?s=MTUlIGRpc2NvdW50Cm5vdGhpbmcKMjAlIGRpc2NvdW50Cm5vdGhpbmcKNTAlIGRpc2NvdW50IApub3RoaW5nCjEwMCUgZGlzY291bnQKbm90aGluZwpGcmVlIGV1cm90cmlw&c=WyJyZ2IoMjUyIDE2NSAxNjUpIiwicmdiKDE5NiAxODEgMjUzKSJd&t=11"
+						width="100%" height="500" style="border: none"></iframe>
+					<div
+						style="max-width:500px;margin-left:auto;margin-right:auto;display:flex;justify-content:end;transform:scale(1)">
+						<a href="https://seatingchartmaker.app/wheel-of-names/?s=MTUlIGRpc2NvdW50Cm5vdGhpbmcKMjAlIGRpc2NvdW50Cm5vdGhpbmcKNTAlIGRpc2NvdW50IApub3RoaW5nCjEwMCUgZGlzY291bnQKbm90aGluZwpGcmVlIGV1cm90cmlw&c=WyJyZ2IoMjUyIDE2NSAxNjUpIiwicmdiKDE5NiAxODEgMjUzKSJd&t=11"
+							target="_blank" rel="noreferrer"
+							style="font-family:sans-serif;display:flex;align-items:center;justify-content:center;color:#1f2937;font-size:12px;font-weight:600;text-decoration:underline;margin-right:1.1rem;margin-top:-1.2rem;text-shadow:0 0 15px #fff,0 0 5px #fff">Full
+							view<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:0.3rem">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg></a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<h3> FIFA25 now available on EXON!!!</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/pBM2xyco_Kg?si=U4hcheAdsTM0cHPK"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</body>
+</div>
+
+</html>
